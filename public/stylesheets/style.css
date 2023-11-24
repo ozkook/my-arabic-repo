@@ -24,20 +24,25 @@ body {
 
 #textContainer {
   font-family: 'Noto Naskh Arabic', sans-serif; /* Using Noto Naskh Arabic for Arabic text */
-  text-align: right; /* For right-to-left languages */
-  font-size: 23px; /* Maintaining a large, readable font size */
+  text-align: right; /* Align text to the right for RTL languages */
+  font-size: 23px; /* Large, readable font size */
   line-height: 1.8; /* Slightly increased for better readability */
   direction: rtl; /* Right-to-left text direction */
-  color: #444444; /* Slightly darker for better contrast */
-  background-color: #ffffff; /* Pure white background for clarity */
-  padding: 25px; /* Increased padding for a more spacious look */
-  border: 2px solid #ccc; /* Slightly thicker border for definition */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12); /* Enhanced shadow for a subtle 3D effect */
-  margin-bottom: 25px; /* Increased margin for better separation from other elements */
-  display: block; /* Ensuring block-level display */
-  border-radius: 8px; /* Slightly larger radius for softer corners */
-  transition: all 0.3s ease; /* Smooth transition for interactive effects */
+  color: #444444; /* Darker color for contrast */
+  background-color: #ffffff; /* White background */
+  padding: 25px; /* Spacious padding */
+  border: 2px solid #ccc; /* Defined border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12); /* Subtle shadow effect */
+  margin-bottom: 25px; /* Space below the container */
+  display: block; /* Block-level display */
+  border-radius: 8px; /* Softened corners */
+  transition: all 0.3s ease; /* Smooth transition for effects */
+
+  width: 80%; /* Specific width */
+  margin-left: auto; /* Auto margin for horizontal centering */
+  margin-right: auto; /* Auto margin for horizontal centering */
 }
+
 
  #textContainer:hover {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.18);
