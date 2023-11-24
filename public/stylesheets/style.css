@@ -1,0 +1,176 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #d4e5cd
+}
+
+a {
+  color: #00B7FF;
+}
+
+/* Special styling for 'highlight' class - example: highlighted text */
+.highlight {
+  color: #785626;
+  font-weight: bold;
+  background-color: #f6ee0b; 
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+body {
+  text-align: right;
+  direction: rtl;
+}
+
+#textContainer {
+  font-family: 'Noto Naskh Arabic', sans-serif; /* Using Noto Naskh Arabic for Arabic text */
+  text-align: right; /* For right-to-left languages */
+  font-size: 23px; /* Maintaining a large, readable font size */
+  line-height: 1.8; /* Slightly increased for better readability */
+  direction: rtl; /* Right-to-left text direction */
+  color: #444444; /* Slightly darker for better contrast */
+  background-color: #ffffff; /* Pure white background for clarity */
+  padding: 25px; /* Increased padding for a more spacious look */
+  border: 2px solid #ccc; /* Slightly thicker border for definition */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12); /* Enhanced shadow for a subtle 3D effect */
+  margin-bottom: 25px; /* Increased margin for better separation from other elements */
+  display: block; /* Ensuring block-level display */
+  border-radius: 8px; /* Slightly larger radius for softer corners */
+  transition: all 0.3s ease; /* Smooth transition for interactive effects */
+}
+
+ #textContainer:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.18);
+  transform: translateY(-3px);
+  border-color: #b0b0b0; /* Subtle change in border color on hover */
+}
+
+
+
+/* Styling for buttons when they are toggled on (active) */
+.button-toggled-on {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #3e8e41;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 7px 12px;
+  font-weight: bold; 
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+
+.button1-text1-class {
+  color: #555;
+  font-size: 18px;
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: block;
+  width: 37%;
+  margin-left: 70%;
+  margin-right: auto;
+}
+
+
+.framed-text-1 {
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: right; /* Aligns text to the right within the element */
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #92bce1;
+  border-radius: 5px;
+  position: relative;
+
+  /* Centering the element */
+  width: fit-content; /* Adjust the width to fit the content */
+  margin-left: auto;
+  margin-right: auto; /* Auto margins for horizontal centering */
+}
+
+
+.framed-text-1:hover {
+  background-color: #aacfef; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
+}
+
+.framed-text-2 {
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: right; /* Aligns text to the right within the element */
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #92bce1;
+  border-radius: 5px;
+  position: relative;
+
+  /* Centering the element */
+  width: fit-content; /* Set the width to fit the content */
+  margin-left: auto;
+  margin-right: auto; /* Auto margins for horizontal centering */
+}
+
+
+.framed-text-2:hover {
+  background-color: #aacfef;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+button {
+  color: white;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: none; 
+  border-radius: 4px;
+}
+
+button {
+  background-color: #6d6d6d;
+}
+
+button:hover {
+  background-color: rgb(72, 145, 144);
+}
+
+.button1-text2-class {
+  color: #333; /* Darker text for better readability */
+  font-size: 20px; /* Slightly larger font size for easier reading */
+  background-color: #f8f8f8; /* Light background for contrast */
+  padding: 20px; /* Increased padding for a spacious look */
+  border-radius: 8px; /* Slightly larger border-radius for a softer look */
+  margin-bottom: 15px; /* Increased margin for better spacing between elements */
+  display: block; /* Ensuring block display for structure */
+  width: 80%; /* Adjusted width for optimal reading length */
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12); /* Enhanced shadow for depth */
+  line-height: 1.6; /* Increased line height for readability */
+  text-align: justify; /* Justified text for even alignment */
+  border: 1px solid #ccc; /* Subtle border for definition */
+  font-family: 'Noto Naskh Arabic', sans-serif; /* Retaining Noto Naskh Arabic font */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+
+  /* Adding a subtle hover effect for interactive feedback */
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+    transform: translateY(-2px);
+  }
+}
+
+
+
+
+
+
+
+

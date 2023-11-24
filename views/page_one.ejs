@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic&display=swap" rel="stylesheet">
+    <!-- Title and Stylesheet -->
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <!-- Page Title -->
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+
+    <!-- Home Page Link -->
+    <a href="/">Go Back to Home</a><br>
+
+    <!-- YouTube Video Embed -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/7Mb1PS19qiI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+    <a href="https://www.youtube.com/watch?v=7Mb1PS19qiI&ab_channel=AlJazeeraArabic%D9%82%D9%86%D8%A7%D8%A9%D8%A7%D9%84%D8%AC%D8%B2%D9%8A%D8%B1%D8%A9" target="_blank">the direct YouTube video</a>
+
+  
+    <!-- Text Container -->
+  <div id="textContainer">
+   <p>اهلا بكم الى موجز لاهم الانباء.</p>
+   <p>تواصلت الاحتجاجات لليلة الخامسة على التوالي على مقتل شاب من أصول جزائرية بنيران شرطي الثلاثاء الماضي،</p>
+   <p>فيما أعلنت نحو عشرين مدينة في ضواحي باريس حظرا ليليا للتجوال.</p>
+   <p>وقد اعلن وزير الداخلية جيرالد دارمانان اعتقال اربع مئة سبعة وعشرين شخصا الليلة الماضية بينهم مئة واثنان وستون في العاصمة باريس.</p>
+   <p>وقد انتشر افراد الشرطة في جادة الشانزليزيه حيث اعتقل عددا من المحتجين, وكان الرئيس الفرنسي قد الغى زيارة كانت مقررة الى المانيا لتفرغه لادارة الازمة.</p>
+  
+   <p>وفي مرسيلسا  أعلنت وزارة الداخلية اعتقال خمسة وخمسين شخصا  فيما أعلن وزير الداخلية إرسال مئتي شرطي إضافي للمساعدة في حفظ الأمن.</p>
+
+   <p>اتهم الرئيس الأوكراني فولوديمير زيلنسكي دولا غربية، لم يسمها، بالتقاعس عن تدريب الطيارين الأوكرانيين على مقاتلات إف ستة عشر.</p>
+   <p>قال نائب رئيس مجلس الأمن القومي الروسي دمتري مدفيديف إن طلب بولندا نشر أسلحة نووية فيها يعني أن هذه الأسلحة ستستخدم، فيما دافعت الخارجية الروسية عن قرار موسكو نشر اسلحة نووية في بيلاروسيا.</p>
+   <p>من ناحيته قال رئيس بيلاروسيا الكساندر لوكاشينكو ان الغرب وضع راس اوروبا تحت المقصلة النووية على حد وصفه.</p>
+  </div>
+
+
+  
+    <!-- Buttons Container 1-->
+    <div class="buttons-container_1">
+      <p class="framed-text-1">סמן בצבע את הפעלים ושמות הפעולה</p> 
+      <button class="highlightButton" data-words="كانت, قال, زيارة, نشر, وكان, وضع, وصفه, س,">בניין 1</button>
+      <button class="highlightButton" data-words=" ">בניין 2</button>
+      <button class="highlightButton" data-words=" ">בניין 3</button>
+      <button class="highlightButton" data-words="لادارة, اعلن, الغى, أعلنت">בניין 4</button>
+      <button class="highlightButton" data-words="لتفرغه ">בניין 5</button>
+      <button class="highlightButton" data-words="تواصلت">בניין 6</button>
+      <button class="highlightButton" data-words=" ">בניין 7</button>
+      <button class="highlightButton" data-words="اعتقال,اعتقل">בניין 8</button>
+      <button class="highlightButton" data-words=",بلبيبلييل">בניין 10</button>
+    </div>
+    <!-- Buttons Container 2-->
+    <div class="buttons-container_2">
+      <p class="framed-text-2">הסברים</p> 
+      <button class="highlightButton" data-text="button1">בניין 1</button>
+      <button class="highlightButton" data-text="button2">בניין 2</button>
+      <button class="highlightButton">בניין 3</button>
+      <button class="highlightButton" data-text="button4">בניין 4</button>
+      <button class="highlightButton">בניין 5</button>
+      <button class="highlightButton">בניין 6</button>
+      <button class="highlightButton">בניין 7</button>
+      <button class="highlightButton">בניין 8</button>
+      <button class="highlightButton">בניין 10</button>
+    </div>
+    <div id="displayText"></div>
+    
+    <script>
+
+      const buttonTexts = {
+        "button1": `<h1 class='button1-text1-class'>הפעלים מבניין 1 המופיעים בטקסט:</h1><br><p class='button1-text2-class'>كان + كانت<br> שורש:   ك. و. ن.<br>גזרה:<br>ע'ו - האות האמצעית בשורש (ע-הפועל) היא תנועה ולא עיצור<br>גוף: הוא + היא<br>זמן: עבר</p><br><p class='button1-text2-class'>قال <br>שורש: ق. و. ل.<br>גזרה:<br>ע'ו - ע-הפועל היא תנועה ולא עיצור<br>גוף: הוא<br>זמן: עבר</p><br><p class='button1-text2-class'>نَشْر שם פעולה/מסדר<br>שורש: ن. ش. ر.<br>משמעות: פריסה (של דבר מה צבאי)</p>`,
+        "button2": `<h1 class='button1-text1-class'>הפעלים מבניין 2 המופיעים בטקסט:</h1><br>`,
+        "button4": `<h1 class='button1-text1-class'>הפעלים מבניין 4 המופיעים בטקסט:</h1><br>`
+};
+
+
+    // Add an event listener that triggers when the DOM content is fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+  // Add event listeners to all buttons with class 'highlightButton' inside the container with class 'buttons-container_1'
+  document.querySelectorAll('.buttons-container_1 .highlightButton').forEach(button => {
+    button.addEventListener('click', function() {
+      // Toggle the class 'button-toggled-on' for the button when clicked
+      this.classList.toggle('button-toggled-on');
+      // Retrieve the words to be highlighted from the button's 'data-words' attribute and split them into an array
+      const words = this.getAttribute('data-words').split(', ');
+      // Call the function toggleHighlight with the array of words
+      toggleHighlight(words);
+    });
+  });
+});
+
+// Define the function toggleHighlight
+function toggleHighlight(words) {
+  // Select all paragraph elements inside the element with id 'textContainer'
+  let paragraphs = document.querySelectorAll('#textContainer p');
+  paragraphs.forEach(p => {
+    // Get the inner HTML of each paragraph
+    let contentText = p.innerHTML;
+
+    // Iterate over each word in the words array
+    words.forEach(word => {
+      // Create a regular expression to find the word in the content, case insensitive
+      const wordRegex = new RegExp(`(${word})`, 'gi');
+
+      // Check if the word is not already highlighted
+      if (!contentText.includes(`<span class="highlight">${word}</span>`)) {
+        // Highlight the word by wrapping it with a span tag and the class 'highlight'
+        contentText = contentText.replace(wordRegex, `<span class="highlight">$1</span>`);
+      } else {
+        // If the word is already highlighted, remove the highlight
+        contentText = contentText.replace(new RegExp(`<span class="highlight">${word}</span>`, 'gi'), word);
+      }
+    });
+
+    // Update the paragraph's inner HTML with the new content
+    p.innerHTML = contentText;
+  });
+}
+
+
+// Add event listeners to all buttons with class 'highlightButton' inside the container with class 'buttons-container_2'
+document.querySelectorAll('.buttons-container_2 .highlightButton').forEach(button => {
+  // Add a click event listener to each button
+  button.addEventListener('click', function() {
+    // Check if the current button has the class 'button-toggled-on'
+    if (this.classList.contains('button-toggled-on')) {
+      // If the button is already active (has the class), clear the text in the element with id 'displayText'
+      document.getElementById('displayText').innerText = '';
+    } else {
+      // If the button is not active, get the text associated with this button from its 'data-text' attribute
+      const textToShow = this.getAttribute('data-text');
+      // Display the retrieved text in the element with id 'displayText'
+      document.getElementById('displayText').innerText = textToShow;
+    }
+    // Toggle the class 'button-toggled-on' on the button, adding it if it's not there and removing it if it is
+    this.classList.toggle('button-toggled-on');
+  });
+});
+
+
+// Add event listeners to all buttons with class 'highlightButton' within the container with class 'buttons-container_2'
+document.querySelectorAll('.buttons-container_2 .highlightButton').forEach(button => {
+  // Add a click event listener to each button
+  button.addEventListener('click', function() {
+    // Retrieve the key from the button's 'data-text' attribute
+    const key = this.getAttribute('data-text');
+    // Use the key to get the corresponding text from the buttonTexts object
+    const textToShow = buttonTexts[key];
+
+    // Check if the current button has the class 'button-toggled-on'
+    if (this.classList.contains('button-toggled-on')) {
+      // If the button is active, clear the text in the element with id 'displayText'
+      document.getElementById('displayText').innerText = '';
+    } else {
+      // If the button is not active, display the text associated with the button in the element with id 'displayText'
+      document.getElementById('displayText').innerText = textToShow;
+    }
+
+    // Toggle the class 'button-toggled-on' on the button to reflect its active or inactive state
+    this.classList.toggle('button-toggled-on');
+  });
+});
+
+
+// Add an event listener to the document that triggers when the DOM content is fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+  // Add event listeners to all buttons with class 'highlightButton' inside the container with class 'buttons-container_2'
+  document.querySelectorAll('.buttons-container_2 .highlightButton').forEach(button => {
+    // Add a click event listener to each button
+    button.addEventListener('click', function() {
+      // Retrieve the key from the button's 'data-text' attribute
+      const key = this.getAttribute('data-text');
+      // Use the key to get the corresponding HTML content from the buttonTexts object
+      const htmlContent = buttonTexts[key];
+
+      // Check if the current button has the class 'button-toggled-on'
+      if (this.classList.contains('button-toggled-on')) {
+        // If the button is active, clear the HTML content in the element with id 'displayText'
+        document.getElementById('displayText').innerHTML = '';
+      } else {
+        // If the button is not active, set the HTML content associated with the button in the element with id 'displayText'
+        document.getElementById('displayText').innerHTML = htmlContent;
+      }
+
+      // Toggle the class 'button-toggled-on' on the button, adding it if it's not there and removing it if it is
+      this.classList.toggle('button-toggled-on');
+    });
+  });
+});
+
+
+
+
+</script>
+</body>
+</html>
+
+
