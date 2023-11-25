@@ -45,28 +45,28 @@
     <!-- Buttons Container 1-->
     <div class="buttons-container_1">
       <p class="framed-text-1">סמן בצבע את הפעלים ושמות הפעולה</p> 
-      <button class="highlightButton" data-words="كانت, قال, زيارة, نشر, وكان, وضع, وصفه, س,">בניין 1</button>
-      <button class="highlightButton" data-words=" ">בניין 2</button>
-      <button class="highlightButton" data-words=" ">בניין 3</button>
-      <button class="highlightButton" data-words="لادارة, اعلن, الغى, أعلنت">בניין 4</button>
-      <button class="highlightButton" data-words="لتفرغه ">בניין 5</button>
-      <button class="highlightButton" data-words="تواصلت">בניין 6</button>
-      <button class="highlightButton" data-words=" ">בניין 7</button>
-      <button class="highlightButton" data-words="اعتقال,اعتقل">בניין 8</button>
-      <button class="highlightButton" data-words=",بلبيبلييل">בניין 10</button>
+      <button class="highlightButton_1" data-words="كانت, قال, زيارة, نشر, وكان, وضع, وصفه, س,">בניין 1</button>
+      <button class="highlightButton_1" data-words=" ">בניין 2</button>
+      <button class="highlightButton_1" data-words=" ">בניין 3</button>
+      <button class="highlightButton_1" data-words="لادارة, اعلن, الغى, أعلنت">בניין 4</button>
+      <button class="highlightButton_1" data-words="لتفرغه ">בניין 5</button>
+      <button class="highlightButton_1" data-words="تواصلت">בניין 6</button>
+      <button class="highlightButton_1" data-words=" ">בניין 7</button>
+      <button class="highlightButton_1" data-words="اعتقال,اعتقل">בניין 8</button>
+      <button class="highlightButton_1" data-words=",بلبيبلييل">בניין 10</button>
     </div>
     <!-- Buttons Container 2-->
     <div class="buttons-container_2">
       <p class="framed-text-2">הסברים</p> 
-      <button class="highlightButton" data-text="button1">בניין 1</button>
-      <button class="highlightButton" data-text="button2">בניין 2</button>
-      <button class="highlightButton">בניין 3</button>
-      <button class="highlightButton" data-text="button4">בניין 4</button>
-      <button class="highlightButton">בניין 5</button>
-      <button class="highlightButton">בניין 6</button>
-      <button class="highlightButton">בניין 7</button>
-      <button class="highlightButton">בניין 8</button>
-      <button class="highlightButton">בניין 10</button>
+      <button class="highlightButton_2" data-text="button1">בניין 1</button>
+      <button class="highlightButton_2" data-text="button2">בניין 2</button>
+      <button class="highlightButton_2">בניין 3</button>
+      <button class="highlightButton_2" data-text="button4">בניין 4</button>
+      <button class="highlightButton_2">בניין 5</button>
+      <button class="highlightButton_2">בניין 6</button>
+      <button class="highlightButton_2">בניין 7</button>
+      <button class="highlightButton_2">בניין 8</button>
+      <button class="highlightButton_2">בניין 10</button>
     </div>
     <div id="displayText"></div>
     
@@ -82,7 +82,7 @@
     // Add an event listener that triggers when the DOM content is fully loaded
 document.addEventListener('DOMContentLoaded', function() {
   // Add event listeners to all buttons with class 'highlightButton' inside the container with class 'buttons-container_1'
-  document.querySelectorAll('.buttons-container_1 .highlightButton').forEach(button => {
+  document.querySelectorAll('.buttons-container_1 .highlightButton_1').forEach(button => {
     button.addEventListener('click', function() {
       // Toggle the class 'button-toggled-on' for the button when clicked
       this.classList.toggle('button-toggled-on');
@@ -124,7 +124,7 @@ function toggleHighlight(words) {
 
 
 // Add event listeners to all buttons with class 'highlightButton' inside the container with class 'buttons-container_2'
-document.querySelectorAll('.buttons-container_2 .highlightButton').forEach(button => {
+document.querySelectorAll('.buttons-container_2 .highlightButton_2').forEach(button => {
   // Add a click event listener to each button
   button.addEventListener('click', function() {
     // Check if the current button has the class 'button-toggled-on'
@@ -144,7 +144,7 @@ document.querySelectorAll('.buttons-container_2 .highlightButton').forEach(butto
 
 
 // Add event listeners to all buttons with class 'highlightButton' within the container with class 'buttons-container_2'
-document.querySelectorAll('.buttons-container_2 .highlightButton').forEach(button => {
+document.querySelectorAll('.buttons-container_2 .highlightButton_2').forEach(button => {
   // Add a click event listener to each button
   button.addEventListener('click', function() {
     // Retrieve the key from the button's 'data-text' attribute
@@ -170,7 +170,7 @@ document.querySelectorAll('.buttons-container_2 .highlightButton').forEach(butto
 // Add an event listener to the document that triggers when the DOM content is fully loaded
 document.addEventListener('DOMContentLoaded', function() {
   // Add event listeners to all buttons with class 'highlightButton' inside the container with class 'buttons-container_2'
-  document.querySelectorAll('.buttons-container_2 .highlightButton').forEach(button => {
+  document.querySelectorAll('.buttons-container_2 .highlightButton_2').forEach(button => {
     // Add a click event listener to each button
     button.addEventListener('click', function() {
       // Retrieve the key from the button's 'data-text' attribute
