@@ -78,51 +78,6 @@ body {
   text-align: center;
 }
 
-
-/* 
-.framed-text-1 {
-  color: #000000;
-  font-size: 20px;
-  font-weight: bold;
-  padding: 10px;
-  background-color: #92bce1;
-  border-radius: 5px;
-  width: 100%;
-  text-align: center;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto; 
-  margin-left: 40%; 
-
-
-
-.framed-text-1:hover {
-  background-color: #aacfef; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
-}
-
-
-.framed-text-2 {
-  color: #000000;
-  font-size: 20px;
-  font-weight: bold;
-  padding: 10px;
-  background-color: #92bce1;
-  border-radius: 5px;
-  width: 100%;
-  text-align: center;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: 45%;
-  margin-right: 45%;
-}
-
-.framed-text-2:hover {
-  background-color: #aacfef;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-} */
-
 button {
   color: white;
   padding: 10px 22px;
@@ -182,7 +137,7 @@ button:hover {
   /* Adding a subtle hover effect for interactive feedback */
   &:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
-    transform: translateY(-2px);
+    transform: translateY(-1px);
   }
 }
 
@@ -191,38 +146,64 @@ button:hover {
   display: flex;
   justify-content: center; /* Center the items horizontally */
   align-items: center; /* Center the items vertically */
-  height: 40vh; /* Take the full height of the viewport */
+  height: 40vh;
+  background-color: #f5f5f5;
+  margin-bottom: 10px;
 }
 
 .iframe-container {
-  /* Your existing styles for iframe-container */
-  margin-right: 40px; /* Add some space between the iframe and search container */
+  position: relative;
+  right: 45%; 
 }
 
 .search-container {
-  width: 300px; /* Adjust as needed */
-  margin-top: -220px; /* Move up */
-  margin-right: -350px; /* Move to the right */
+  width: 500px; /* Adjust as needed */
+  margin-top: -20px; /* Move up */
   position: relative; /* Add this to enable relative positioning */
+  right: -475px; /* Move to the right; adjust this value as needed */
+  display: flex; /* Enables flexbox layout for the container */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Aligns items in the center of the container */
+  background-color: white; /* Background color for the search container */
+  padding: 20px; /* Padding around the container */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+.search-container:hover, .framed-text-2:hover {
+  background-color: #e2ecf5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-1px);
 }
 
 .search-container input[type="text"] {
-  width: 70%; /* Adjust as needed */
-  padding: 5px;
-  margin-right: 5px; /* Space between input and button */
-} 
-
-.search-container button {
-  width: 25%; /* Adjust as needed */
-  padding: 5px;
-  margin-top: 15px;
+  width: 70%; /* Sets the width of the input field */
+  padding: 10px; /* Adds more padding inside the input field for comfort */
+  margin-bottom: 10px; /* Adds space below the input field */
+  border: 1px solid #ddd; /* Light border for the input */
+  border-radius: 5px; /* Rounded corners for the input field */
 }
 
+.search-container button {
+  width: 25%; /* Sets the width of the button */
+  padding: 10px; /* Adds more padding inside the button for comfort */
+  margin-bottom: 10px; /* Adds space below the button */
+  background-color: #007bff; /* A professional-looking button color */
+  color: white; /* Text color for the button */
+  border: none; /* Removes the border */
+  border-radius: 5px; /* Rounded corners for the button */
+  cursor: pointer; /* Changes the cursor to indicate it's clickable */
+}
+
+.search-container button:hover {
+  background-color: #0056b3; /* Slightly darker shade on hover for interaction feedback */
+}
+
+
 .small-text-box {
-  margin-top: 10px;
   font-size: 0.8em; /* Adjust as needed */
   /* Additional styling for the small text box */
 }
+
 
 
 .centered-container {
