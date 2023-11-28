@@ -73,28 +73,27 @@ body {
   margin-bottom: 10px;
   display: block;
   width: 37%;
-  margin-left: 70%;
+  margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 
+/* 
 .framed-text-1 {
   color: #000000;
   font-size: 20px;
   font-weight: bold;
-  /* text-align: right; */
-  /* margin-top: 30px;
-  margin-bottom: 10px; */
   padding: 10px;
   background-color: #92bce1;
   border-radius: 5px;
-  /* position: relative; */
-
-  
-  width: fit-content;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
   margin-left: auto;
-  margin-right: auto;
-}
+  margin-right: auto; 
+  margin-left: 40%; 
+
 
 
 .framed-text-1:hover {
@@ -102,29 +101,27 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
 }
 
+
 .framed-text-2 {
   color: #000000;
   font-size: 20px;
   font-weight: bold;
-  text-align: right; /* Aligns text to the right within the element */
-  margin-top: 30px;
-  margin-bottom: 10px;
   padding: 10px;
   background-color: #92bce1;
   border-radius: 5px;
-  position: relative;
-
-  /* Centering the element */
-  width: fit-content; /* Set the width to fit the content */
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
   margin-left: auto;
-  margin-right: auto; /* Auto margins for horizontal centering */
+  margin-right: auto;
+  margin-left: 45%;
+  margin-right: 45%;
 }
-
 
 .framed-text-2:hover {
   background-color: #aacfef;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-}
+} */
 
 button {
   color: white;
@@ -147,20 +144,37 @@ button:hover {
   background-color: rgb(72, 145, 144);
 }
 
+.buttons-container_1 {
+  display: flex;
+  flex-direction: row; /* Align children horizontally */
+  flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+  justify-content: center; /* Center-align items horizontally */
+  align-items: flex-start; /* Align items to the start vertically */
+}
+
+.buttons-container_2 {
+  display: flex;
+  flex-direction: row; /* Align children horizontally */
+  flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+  justify-content: center; /* Center-align items horizontally */
+  align-items: flex-start; /* Align items to the start vertically */
+}
+
+
 .button1-text2-class {
   color: #333; /* Darker text for better readability */
-  font-size: 20px; /* Slightly larger font size for easier reading */
+  font-size: 30px; /* Slightly larger font size for easier reading */
   background-color: #f8f8f8; /* Light background for contrast */
   padding: 20px; /* Increased padding for a spacious look */
   border-radius: 8px; /* Slightly larger border-radius for a softer look */
   margin-bottom: 15px; /* Increased margin for better spacing between elements */
   display: block; /* Ensuring block display for structure */
-  width: 80%; /* Adjusted width for optimal reading length */
+  width: 50%; /* Adjusted width for optimal reading length */
   margin-left: auto;
   margin-right: auto;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12); /* Enhanced shadow for depth */
   line-height: 1.6; /* Increased line height for readability */
-  text-align: justify; /* Justified text for even alignment */
+  text-align: right; /* Justified text for even alignment */
   border: 1px solid #ccc; /* Subtle border for definition */
   font-family: 'Noto Naskh Arabic', sans-serif; /* Retaining Noto Naskh Arabic font */
   transition: all 0.3s ease; /* Smooth transition for hover effects */
@@ -171,17 +185,62 @@ button:hover {
     transform: translateY(-2px);
   }
 }
-.buttons-container_1 {
+
+
+.content-container {
   display: flex;
-  flex-direction: row; /* Align children horizontally */
-  flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
-  justify-content: center; /* Center-align items horizontally */
-  align-items: flex-start; /* Align items to the start vertically */
+  justify-content: center; /* Center the items horizontally */
+  align-items: center; /* Center the items vertically */
+  height: 40vh; /* Take the full height of the viewport */
 }
 
-.framed-text-1 {
-  width: 100%; /* Make it span the full width of the container */
-  text-align: center;
-  margin-bottom: 20px; /* Space between the text and buttons */
+.iframe-container {
+  /* Your existing styles for iframe-container */
+  margin-right: 40px; /* Add some space between the iframe and search container */
 }
 
+.search-container {
+  width: 300px; /* Adjust as needed */
+  margin-top: -220px; /* Move up */
+  margin-right: -350px; /* Move to the right */
+  position: relative; /* Add this to enable relative positioning */
+}
+
+.search-container input[type="text"] {
+  width: 70%; /* Adjust as needed */
+  padding: 5px;
+  margin-right: 5px; /* Space between input and button */
+} 
+
+.search-container button {
+  width: 25%; /* Adjust as needed */
+  padding: 5px;
+  margin-top: 15px;
+}
+
+.small-text-box {
+  margin-top: 10px;
+  font-size: 0.8em; /* Adjust as needed */
+  /* Additional styling for the small text box */
+}
+
+
+.centered-container {
+  text-align: center; /* This will center the inline-block elements */
+}
+
+.framed-text-1, .framed-text-2 {
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #92bce1;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 10px 0; /* Adjust top and bottom margin as needed */
+}
+
+.framed-text-1:hover, .framed-text-2:hover {
+  background-color: #aacfef;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}

@@ -8,17 +8,29 @@
   </head>
   <body>
     <!-- Page Title -->
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-
-    <!-- Home Page Link -->
+    <!-- <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p> -->
     <a href="/">Go Back to Home</a><br>
 
-    <!-- YouTube Video Embed -->
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/7Mb1PS19qiI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
-    <a href="https://www.youtube.com/watch?v=7Mb1PS19qiI&ab_channel=AlJazeeraArabic%D9%82%D9%86%D8%A7%D8%A9%D8%A7%D9%84%D8%AC%D8%B2%D9%8A%D8%B1%D8%A9" target="_blank">the direct YouTube video</a>
-
+<!-- Parent Container -->
+<div class="content-container">
+  <div class="iframe-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/7Mb1PS19qiI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
   
+  <!-- Search Container -->
+  <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search...">
+      <button id="searchButton">Search</button>
+      <div class="small-text-box">
+          Small Text or Info
+      </div>
+  </div>
+
+
+</div>
+
+    
     <!-- Text Container -->
   <div id="textContainer">
    <p>اهلا بكم الى موجز لاهم الانباء.</p>
@@ -43,8 +55,10 @@
 
   
     <!-- Buttons Container 1-->
-    <div class="buttons-container_1">
+    <div class="centered-container">
       <p class="framed-text-1">סמן בצבע את הפעלים ושמות הפעולה</p> 
+    </div>
+    <div class="buttons-container_1">
       <button class="highlightButton_1" data-words="كانت, قال, زيارة, نشر, وكان, وضع, وصفه, نقل, وقوع, ختم, ستحل , ضربت, س,">בניין 1</button>
       <button class="highlightButton_1" data-words="يسمها, تدريب , حلقت , حذرت, أكد">בניין 2</button>
       <button class="highlightButton_1" data-words="يعانون">בניין 3</button>
@@ -56,8 +70,10 @@
       <button class="highlightButton_1" data-words=",بلبيبلييل">בניין 10</button>
     </div>
     <!-- Buttons Container 2-->
-    <div class="buttons-container_2">
+    <div class="centered-container">
       <p class="framed-text-2">הסברים</p> 
+    </div>
+    <div class="buttons-container_2">
       <button class="highlightButton_2" data-text="button1">בניין 1</button>
       <button class="highlightButton_2" data-text="button2">בניין 2</button>
       <button class="highlightButton_2">בניין 3</button>
