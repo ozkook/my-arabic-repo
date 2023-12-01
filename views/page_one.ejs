@@ -13,6 +13,7 @@
     <a href="/">Go Back to Home</a><br>
 
 <!-- Parent Container -->
+<button id="toggleTextButton">Toggle Text</button>
 <div class="content-container">
   <div class="iframe-container">
     <iframe width="375" height="200" src="https://www.youtube.com/embed/7Mb1PS19qiI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -36,7 +37,7 @@
    <p>اهلا بكم الى موجز لاهم الانباء.</p>
    <p>تواصلت الاحتجاجات لليلة الخامسة على التوالي على مقتل شاب من أصول جزائرية بنيران شرطي الثلاثاء الماضي،</p>
    <p>فيما أعلنت نحو عشرين مدينة في ضواحي باريس حظرا ليليا للتجوال.</p>
-   <p>وقد اعلن وزير الداخلية جيرالد دارمانان اعتقال اربع مئة سبعة وعشرين شخصا الليلة الماضية بينهم مئة واثنان وستون في العاصمة باريس.</p>
+   <p>وقد أعلن وزير الداخلية جيرالد دارمانان اعتقال اربع مئة سبعة وعشرين شخصا الليلة الماضية بينهم مئة واثنان وستون في العاصمة باريس.</p>
    <p>وقد انتشر افراد الشرطة في جادة الشانزليزيه حيث اعتقل عددا من المحتجين, وكان الرئيس الفرنسي قد الغى زيارة كانت مقررة الى المانيا لتفرغه لادارة الازمة.</p>
   
    <p>وفي مرسيلسا  أعلنت وزارة الداخلية اعتقال خمسة وخمسين شخصا  فيما أعلن وزير الداخلية إرسال مئتي شرطي إضافي للمساعدة في حفظ الأمن.</p>
@@ -56,18 +57,18 @@
   
     <!-- Buttons Container 1-->
     <div class="centered-container">
-      <p class="framed-text-1">סמן בצבע את הפעלים ושמות הפעולה</p> 
+      <p class="framed-text-1">סמן בצבע את הפעלים</p> 
     </div>
     <div class="buttons-container_1">
-      <button class="highlightButton_1" data-words="كانت, قال, زيارة, نشر, وكان, وضع, وصفه, نقل, وقوع, ختم, ستحل , ضربت, س,">בניין 1</button>
+      <button class="highlightButton_1" data-words="كانت, قال, زيارة, نشر, وكان, وضع, وصفه, نقل, وقوع, ختم, ستحل , ضربت, x,">בניין 1</button>
       <button class="highlightButton_1" data-words="يسمها, تدريب , حلقت , حذرت, أكد">בניין 2</button>
-      <button class="highlightButton_1" data-words="يعانون">בניין 3</button>
-      <button class="highlightButton_1" data-words="لادارة, اعلن, الغى, أعلنت, إرسال, افاد, أوضح, أُطْلِقَ, إصابات, أغارت">בניין 4</button>
+      <button class="highlightButton_1" data-words="يعانون, دافعت ">בניין 3</button>
+      <button class="highlightButton_1" data-words=",أعلنت, الغى, أعلن, إرسال, افاد, أوضح, أُطْلِقَ, إصابات, أغارت">בניין 4</button>
       <button class="highlightButton_1" data-words="لتفرغه, يتسبب ">בניין 5</button>
-      <button class="highlightButton_1" data-words="تواصلت">בניין 6</button>
-      <button class="highlightButton_1" data-words="انطلق, انفجر, اندلاع">בניין 7</button>
-      <button class="highlightButton_1" data-words="اعتقال, اعتقل, الاحتجاجات, اتهم, اشتباكات">בניין 8</button>
-      <button class="highlightButton_1" data-words=",بلبيبلييل">בניין 10</button>
+      <button class="highlightButton_1" data-words="تواصلت, تبادلا, تقاعس ">בניין 6</button>
+      <button class="highlightButton_1" data-words="انطلق, انفجر, اندلاع, انتشر">בניין 7</button>
+      <button class="highlightButton_1" data-words="اعتقال, اعتقل, الاحتجاجات, اتهم, اشتباكات,">בניין 8</button>
+      <button class="highlightButton_1" data-words="ستستخدم, X,">בניין 10</button>
     </div>
     <!-- Buttons Container 2-->
     <div class="centered-container">
@@ -214,7 +215,7 @@ function performSearch() {
   const searchInput = document.getElementById('searchInput').value.trim();
   const searchResult = searchArray.find(item => item.keyword === searchInput);
 
-  let displayText = searchResult ? searchResult.result : "No results found";
+  let displayText = searchResult ? searchResult.result : "לא נמצא - הקליקו לחיצה כפולה על מילה, העתיקו, והדביקו בתיבת החיפוש.";
   document.getElementById('dictionaryResult').innerText = displayText;
 }
 
@@ -222,7 +223,7 @@ function performSearch() {
 document.getElementById('searchButton').addEventListener('click', performSearch);
 
 const searchArray = [
-{ keyword: "اهلا", result: "Result for searchTerm" },
+{ keyword: "اهلا", result: "שורש:XXX. גוף: XXX. זמן: XXX. פירוש:XXX. הערות: XXX." },
 { keyword: "بكم", result: "Result for searchTerm" },
 { keyword: "الى", result: "Result for searchTerm" },
 { keyword: "موجز", result: "Result for searchTerm" },
@@ -551,6 +552,23 @@ const searchArray = [
 { keyword: "اللقاء", result: "Result for searchTerm" },
   
 ];
+
+// Function to toggle between text containers
+function toggleTextContainers() {
+    var textContainer = document.getElementById("textContainer");
+    var newTextContainer = document.getElementById("newTextContainer");
+
+    if (textContainer.style.display === "none") {
+        textContainer.style.display = "block";
+        newTextContainer.style.display = "none";
+    } else {
+        textContainer.style.display = "none";
+        newTextContainer.style.display = "block";
+    }
+}
+
+// Event listener for the new button
+document.getElementById('toggleTextButton').addEventListener('click', toggleTextContainers);
 
 
 </script>

@@ -227,9 +227,29 @@ button:hover {
 }
 
 #dictionaryResult {
-  /* Add your desired styles here */
-  margin-top: 20px;
+  margin-top: 1px;
   padding: 10px;
-  border: 1px solid #ccc;
-  background-color: #f9f9f9;
+  border: 5px solid #ccc; /* Solid border with light grey color */
+  background-color: #f9f9f9; /* Light grey background for contrast */
+  color: #333; /* Darker text color for readability */
+  font-size: 16px; /* Comfortable font size */
+  line-height: 1.5; /* Spacing between lines */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow for depth */
+  text-align: center; /* Center align the text */
+  max-width: 80%; /* Maximum width of the result box */
+  margin-left: auto; /* Center the box horizontally */
+  margin-right: auto; /* Center the box horizontally */
+  overflow: auto; /* Ensure content is scrollable if it overflows */
+  font-family: 'Arial', sans-serif; /* Use a readable font */
+  transition: all 0.3s ease; /* Smooth transition for interactive effects */
+}
+
+#dictionaryResult:hover {
+  border-color: #999; /* Darker border color on hover for interactive feedback */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Slightly deeper shadow on hover */
+  transform: translateY(-2px); /* Slight upward movement on hover */
+}
+.hidden {
+  display: none;
 }
