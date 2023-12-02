@@ -158,7 +158,7 @@ button:hover {
 
 .search-container {
   width: 500px; /* Adjust as needed */
-  margin-top: -20px; /* Move up */
+  margin-top: -1px; /* Move up */
   position: relative; /* Add this to enable relative positioning */
   right: -475px; /* Move to the right; adjust this value as needed */
   display: flex; /* Enables flexbox layout for the container */
