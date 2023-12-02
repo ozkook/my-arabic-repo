@@ -253,3 +253,23 @@ button:hover {
 .hidden {
   display: none;
 }
+#newTextContainer {
+  font-family: 'Noto Naskh Arabic', sans-serif; /* Using Noto Naskh Arabic for Arabic text */
+  text-align: right; /* Align text to the right for RTL languages */
+  font-size: 28px; /* Large, readable font size */
+  line-height: 1.8; /* Slightly increased for better readability */
+  direction: rtl; /* Right-to-left text direction */
+  color: #444444; /* Darker color for contrast */
+  background-color: #ffffff; /* White background */
+  padding: 25px; /* Spacious padding */
+  border: 2px solid #ccc; /* Defined border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12); /* Subtle shadow effect */
+  margin-bottom: 25px; /* Space below the container */
+  display: block; /* Block-level display */
+  border-radius: 8px; /* Softened corners */
+  transition: all 0.3s ease; /* Smooth transition for effects */
+
+  width: 80%; /* Specific width */
+  margin-left: auto; /* Auto margin for horizontal centering */
+  margin-right: auto; /* Auto margin for horizontal centering */
+}

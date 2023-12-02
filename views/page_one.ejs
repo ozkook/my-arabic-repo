@@ -54,6 +54,10 @@
   </div>
 
 
+  <div id="newTextContainer" style="display: none;">
+    <p>hhshhshsshshh</p>
+  </div>
+
   
     <!-- Buttons Container 1-->
     <div class="centered-container">
@@ -558,6 +562,7 @@ function toggleTextContainers() {
     var textContainer = document.getElementById("textContainer");
     var newTextContainer = document.getElementById("newTextContainer");
 
+    // Check the current display state and toggle it
     if (textContainer.style.display === "none") {
         textContainer.style.display = "block";
         newTextContainer.style.display = "none";
@@ -566,8 +571,10 @@ function toggleTextContainers() {
         newTextContainer.style.display = "block";
     }
 }
-// Event listener for the new button
+
+// Event listener for the toggle button
 document.getElementById('toggleTextButton').addEventListener('click', toggleTextContainers);
+
 
 
 </script>
