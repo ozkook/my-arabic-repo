@@ -25,7 +25,7 @@ body {
 #textContainer {
   font-family: 'Noto Naskh Arabic', sans-serif; /* Using Noto Naskh Arabic for Arabic text */
   text-align: right; /* Align text to the right for RTL languages */
-  font-size: 28px; /* Large, readable font size */
+  font-size: 38px; /* Large, readable font size */
   line-height: 1.8; /* Slightly increased for better readability */
   direction: rtl; /* Right-to-left text direction */
   color: #444444; /* Darker color for contrast */
@@ -66,7 +66,7 @@ body {
 
 .button1-text1-class {
   color: #555;
-  font-size: 18px;
+  font-size: 25px;
   background-color: #f0f0f0;
   padding: 15px;
   border-radius: 5px;
@@ -124,7 +124,7 @@ button:hover {
   border-radius: 8px; /* Slightly larger border-radius for a softer look */
   margin-bottom: 15px; /* Increased margin for better spacing between elements */
   display: block; /* Ensuring block display for structure */
-  width: 50%; /* Adjusted width for optimal reading length */
+  width: 275px; /* Adjusted width for optimal reading length */
   margin-left: auto;
   margin-right: auto;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12); /* Enhanced shadow for depth */
@@ -133,12 +133,19 @@ button:hover {
   border: 1px solid #ccc; /* Subtle border for definition */
   font-family: 'Noto Naskh Arabic', sans-serif; /* Retaining Noto Naskh Arabic font */
   transition: all 0.3s ease; /* Smooth transition for hover effects */
+  text-align: right;
+  margin: 0 auto;
 
   /* Adding a subtle hover effect for interactive feedback */
   &:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
     transform: translateY(-1px);
   }
+}
+
+.arabic-text {
+  font-size: 52px; /* Adjust the font size as needed */
+  /* Any other specific styling for Arabic text */
 }
 
 
@@ -256,7 +263,7 @@ button:hover {
 #newTextContainer {
   font-family: 'Noto Naskh Arabic', sans-serif; /* Using Noto Naskh Arabic for Arabic text */
   text-align: right; /* Align text to the right for RTL languages */
-  font-size: 28px; /* Large, readable font size */
+  font-size: 47px; /* Large, readable font size */
   line-height: 1.8; /* Slightly increased for better readability */
   direction: rtl; /* Right-to-left text direction */
   color: #444444; /* Darker color for contrast */
